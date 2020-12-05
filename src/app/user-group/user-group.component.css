@@ -1,0 +1,15 @@
+.groupName{
+    background-color: rgb(9, 1, 22);
+    color: #fff;
+    padding: 10px;
+    
+}
+.groupName span{
+    font-family: 'Lato';
+    font-weight: bold;
+}
+
+.groupDescription{
+    border: 0.5px solid rgba(128, 128, 128, 0.466);
+    margin: 10px 0px;
+}

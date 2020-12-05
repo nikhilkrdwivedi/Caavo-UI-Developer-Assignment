@@ -1,0 +1,25 @@
+
+<div class="container">
+    <div class="row text-center">
+        <div class="col groupName">
+        <span>{{groupData.groupName}}</span>
+        </div>
+    </div>
+    <div class="row text-center">
+        <div class="col groupDescription">
+        <span>{{groupData.groupDescription}}</span>
+        </div>
+    </div>
+    <div class="row row-cols-1 row-cols-md-5">
+        <div class="col mb-4" *ngFor="let user of groupData['groupUserList']">
+          <div class="card">
+            <img src='{{getUserData(user)["Image"]}}' class="card-img-top" alt='' height="130px">
+            <div class="card-body text-center">
+              <p class="card-title">{{getUserData(user)['name']}}</p>
+              <p class="card-text">{{getUserData(user)['id']}}</p>
+              <input type="checkbox" class="text-center" [checked]="getUserData(user)['isChecked']">
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
